@@ -31,7 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "react-scripts test --reporters=default --reporters ./node_modules/jest-cucumber/dist/src/reporter --watchAll=false && ts-node-script scripts/cucumber/GenerateReport.ts && git add reports && git commit --amend",
+    "test:ci": "react-scripts test --reporters=default --reporters ./node_modules/jest-cucumber/dist/src/reporter --watchAll=false && ts-node-script scripts/cucumber/GenerateReport.ts && git add reports && git commit --amend --no-edit",
     "generate-cucumber": "ts-node-script scripts/cucumber/GenerateSteps.ts"
   },
   "eslintConfig": {

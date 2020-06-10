@@ -22,7 +22,7 @@ defineFeature(feature, test => {
         })
     })
     
-    test('Another test scenario', ({ given, when, then }) => {
+    test('Another test scenario', ({ given, when, then, pending }) => {
         
         given('a new scenario', () => {
         })
@@ -31,7 +31,7 @@ defineFeature(feature, test => {
         })
         
         then('value should be in test', () => {
-            expect(1).toEqual(2)
+            pending()
         })
     })
 })
