@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ci": "npm run generate-cucumber-report || git add reports && git commit --amend --no-edit",
-    "generate-cucumber-report": "react-scripts test --reporters=default --reporters ./node_modules/jest-cucumber/dist/src/reporter --watchAll=false && ts-node-script scripts/cucumber/GenerateReport.ts",
+    "generate-cucumber-report": "react-scripts test --reporters=default --reporters ./node_modules/jest-cucumber/dist/src/reporter --watchAll=false || ts-node-script scripts/cucumber/GenerateReport.ts",
     "generate-cucumber": "ts-node-script scripts/cucumber/GenerateSteps.ts"
   },
   "eslintConfig": {
