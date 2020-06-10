@@ -52,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test-cucumber; npm run generate-cucumber-report; git add reports"
+      "pre-push": "npm run test-cucumber; npm run generate-cucumber-report; git add reports;"
     }
   }
 }
