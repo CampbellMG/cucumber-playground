@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">cucumber-playground</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 2</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Wed Jun 10 2020 13:49:12 GMT+1000 (Australian Eastern Standard Time)</div>
+      <div class="generated-on">Wed Jun 10 2020 13:52:25 GMT+1000 (Australian Eastern Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,7 +303,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -313,14 +313,15 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturecucumber_playground0ea82699-ec69-4ec7-9b93-168676f4280f">
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_playgrounde52a55b1-d790-4980-bdf2-5efbfda1dc1b">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Opening App
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="2 Scenarios Passed">2</span>
-              
+                                                         title="1 Scenarios Passed">1</span>
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -329,7 +330,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturecucumber_playground0ea82699-ec69-4ec7-9b93-168676f4280f" class="panel-collapse collapse">
+            <div id="collapseFeaturecucumber_playgrounde52a55b1-d790-4980-bdf2-5efbfda1dc1b" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     <div class="description">  As a user I want to open the app so that I can begin use</div>
@@ -344,10 +345,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariocucumber_playground4e1d9f6b-0ff8-4f7c-b3c0-81527c04c7d5">
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_playground12999bc1-ff2c-41bc-b27d-0cb6abe07e8b">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Another test scenario
@@ -355,11 +356,12 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -368,7 +370,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariocucumber_playground4e1d9f6b-0ff8-4f7c-b3c0-81527c04c7d5"
+                        <div id="collapseScenariocucumber_playground12999bc1-ff2c-41bc-b27d-0cb6abe07e8b"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -455,8 +457,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -465,7 +467,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               8ms
                               </span>
                             
                          
@@ -476,6 +478,46 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_02"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_02"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_02">
+                                            <br> {"matcherResult":{"actual":1,"expected":2,"name":"toEqual","pass":false}}</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_02" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>{"matcherResult":{"actual":1,"expected":2,"name":"toEqual","pass":false}}</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -501,7 +543,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariocucumber_playground93888c6a-e2f9-43aa-a980-4b9c96d4d38a">
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_playground2a1ea6d1-98c9-4d37-a341-833e3c125b83">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -525,7 +567,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariocucumber_playground93888c6a-e2f9-43aa-a980-4b9c96d4d38a"
+                        <div id="collapseScenariocucumber_playground2a1ea6d1-98c9-4d37-a341-833e3c125b83"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -758,8 +800,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -768,8 +810,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 2,
+                                                            "failed" : 1,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
