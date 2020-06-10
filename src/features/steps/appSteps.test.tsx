@@ -28,7 +28,7 @@ defineFeature(feature, test => {
         })
         
         when('adding the value', () => {
-            pending()
+            return pending()
         })
         
         then('value should be in test', () => {
