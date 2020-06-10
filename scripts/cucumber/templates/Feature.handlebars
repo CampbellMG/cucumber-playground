@@ -1,0 +1,9 @@
+import {defineFeature, loadFeature} from "jest-cucumber";
+
+const feature = loadFeature('{{featureFile}}')
+
+defineFeature(feature, test => {
+{{#each scenarios}}
+    {{> scenario}}
+{{/each}}
+})

@@ -10,16 +10,26 @@
     "@types/node": "^12.12.45",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "@types/yaml": "^1.9.7",
+    "cucumber-messages": "^8.0.0",
+    "gherkin": "^9.0.0",
+    "handlebars": "^4.7.6",
+    "jest-cucumber": "^2.0.11",
+    "jsdom-global": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "^3.7.5"
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.5",
+    "uninstall": "0.0.0",
+    "yaml": "^1.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "generate-cucumber": "ts-node-script scripts/cucumber/GenerateSteps.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
