@@ -31,7 +31,7 @@ defineFeature(feature, test => {
         })
         
         then('value should be in test', () => {
-            expect("An expected result").toEqual("another unexpected result")
+            expect("An expected result").toEqual("another-- unexpected result")
         })
     })
 })
