@@ -15,7 +15,7 @@ jobs:
         run: npm i
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm run test:ci
 
       - name: Archive report
         uses: actions/upload-artifact@v1
